@@ -1,0 +1,11 @@
+li{
+    list-style-type: none;
+    margin: 1px;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+li:hover {
+    background-color: blueviolet;
+    color: yellow;
+}

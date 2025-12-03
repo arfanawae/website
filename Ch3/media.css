@@ -1,0 +1,50 @@
+.main-layout{
+    position: absolute;
+    top: 5%;
+    font-size: 1.2em;
+}
+
+.title, .message {
+    display: block;
+}
+
+.title {
+    position: fixed;
+    top: 5%;
+    font-size: 2em;
+}
+
+@midia (max-width:500px) {
+    .title{
+        position: relative;
+        font-size: 2em;
+    }
+}
+
+.messege {
+    margin-top: 20px;
+}
+
+#stick1, #stick2, #stick3{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#stick1{
+    background-color: violet;
+    box-shadow: 5px 10px  5px rgb(0, 0, 0);
+}
+
+#stick2{
+    background-color: rgb(112, 250, 0);
+    box-shadow: 5px 10px  5px rgb(0, 0, 0);
+}
+
+#stick3{
+    background-color: rgb(12, 173, 173);
+    box-shadow: 5px 10px  5px rgb(0, 0, 0);
+}

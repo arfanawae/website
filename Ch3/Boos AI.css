@@ -1,0 +1,41 @@
+/* ลบ/แก้ไขส่วนที่จัดวางเลย์เอาต์เดิม */
+/* main.css */
+
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+
+/* * ลบ header {} เพราะใช้คลาส Bootstrap จัดสไตล์แล้ว (bg-primary, text-light)
+ * ลบ aside {} เพราะใช้ col-3 จัดวางแล้ว
+ * ลบ main {} เพราะใช้ col-9 จัดวางแล้ว
+*/
+
+/* footer {} ยังเก็บไว้ได้ เพื่อคงการ fixed position หากต้องการ */
+footer {
+    /* ใช้คลาส Bootstrap 'bg-info' แทน background-color */
+    /* color: white; */ 
+    text-align: center;
+    /* padding: 10px 0; */ 
+    position: fixed; /* คงตำแหน่งตรึงไว้ */
+    width: 100%;
+    bottom: 0;
+}
+
+/* ปรับสไตล์รายการเมนู (li) ให้เป็นสีพื้นหลังตามรูปภาพ */
+ul li { 
+    /* เปลี่ยนจาก li เป็น ul li เพราะใน HTML มีการใส่ ul class="list-unstyled" */
+    list-style-type: none;
+    margin: 1px 0; /* ปรับ margin เป็น 0 เพื่อให้ชิดกัน */
+    padding: 5px;
+    /* ใช้สีเทาอ่อนตามรูปภาพผลลัพธ์ (คล้าย aliceblue แต่เข้มกว่านิดหน่อย) */
+    background-color: #e9ecef; /* ใกล้เคียงสีเทาอ่อนของ Bootstrap */
+    color: #495057; /* สีตัวอักษรเป็นสีดำ/เทาเข้ม */
+    cursor: pointer; /* เพิ่มเพื่อให้ดูเป็นลิงก์ */
+}
+
+ul li:hover {
+    /* ปรับสี hover ให้เป็นสีม่วงตามรูปภาพ */
+    background-color: #6c757d; /* สีเทาเข้ม/ม่วงอ่อนที่เข้ากัน */
+    color: white; /* ตัวอักษรเป็นสีขาว */
+}
